@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+<link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+  <header class="header"> 
+    <h1 id="title" class="text-center"> Form</h1> 
+    <p id="description" class="description text-center"> this is a survey form </p>
+  </header>
+
+ <form id="survey-form">
+
+   <div class="form-group">
+     <label id="name-label" for="name">Name</label>
+     <input id="name" class="form-control" type="text" placeholder="enter your name" required>
+    </div>
+
+    <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" class="form-control" type="email" placeholder="enter your email" required>
+    </div>
+
+    <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input id="number" class="form-control" type="number" min="10" max="100" placeholder="optional">
+    </div>
+
+    <div class="form-group">
+        <label id="dropdown-label" for="dropdown">You are a</label>
+        <select id="dropdown" name="role" class="form-control" required>  
+
+         <option value="null" disabled selected >.......</option>
+
+         <option value="1"> Student </option>
+
+         <option value="2"> Full time worker </option>
+
+         <option value="3"> Unemployed </option>
+
+         <option value="4"> Disabled </option>
+
+         <option value="5"> Prefer not to say </option>
+
+        </select>
+    </div>
+
+    <div class="form-group">
+        <p>Do you recommend programming for a job ?</p>
+        <label> <input name="user-enjoy" value="yes" type="radio" class="input-radio">no</label>
+        <label> <input name="user-enjoy" value="no" type="radio" class="input-radio">no</label>
+        <label> <input name="user-enjoy" value="maybe" type="radio" class="input-radio">no</label>
+        <label> <input name="user-enjoy" value="maybe" type="radio" class="input-radio">maybe</label>
+    </div>
+
+    <div class="form-group">
+        <p>Select that apply.</p>
+        <label> <input name="checkboxes" value="1check" type="checkbox" class="input-checkbox">i have no friends</label>
+        <label> <input name="checkboxes" value="2check" type="checkbox" class="input-checkbox">i have no contribution to society</label>
+        <label> <input name="checkboxes" value="3check" type="checkbox" class="input-checkbox">last time i took a shower was 3 or more days ago</label>
+        <label> <input name="checkboxes" value="4check" type="checkbox" class="input-checkbox">i like femboys</label>
+        <label> <input name="checkboxes" value="4check" type="checkbox" class="input-checkbox">i like furries</label>
+        <label> <input name="checkboxes" value="5check" type="checkbox" class="input-checkbox">i have discord installed on my computer</label>
+        <label> <input name="checkboxes" value="5check" type="checkbox" class="input-checkbox">i am out of shape</label>
+    </div>
+
+    <div class="form-group">
+        <p>Any thoughts you would like to share with ?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="write here"></textarea>
+    </div>
+
+  <input id="submit" class="submit-button" type="submit">
+
+ </form>
+
+</body>
